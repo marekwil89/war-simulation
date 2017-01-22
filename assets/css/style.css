@@ -1,0 +1,520 @@
+@charset "UTF-8";
+.fighters-detail-box {
+  background-color: #262626;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100vh;
+  box-sizing: border-box; }
+  .fighters-detail-box .fighter-detail {
+    margin: 0 25px;
+    box-shadow: 5px -5px 5px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 25px;
+    background-color: #CCCCCC;
+    color: #1a1b41;
+    text-align: center;
+    width: 400px;
+    box-sizing: border-box; }
+    .fighters-detail-box .fighter-detail img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 130px; }
+    .fighters-detail-box .fighter-detail h1 {
+      font-family: "Black Ops One", cursive;
+      text-transform: uppercase;
+      letter-spacing: 3.5px;
+      font-size: 34px;
+      color: #1a1b41; }
+    .fighters-detail-box .fighter-detail ul {
+      list-style: none;
+      padding: 0;
+      margin: 0; }
+      .fighters-detail-box .fighter-detail ul li {
+        padding: 30px 0;
+        box-sizing: border-box;
+        display: inline-block;
+        width: 50%; }
+        .fighters-detail-box .fighter-detail ul li p {
+          color: #1a1b41;
+          font-weight: 700;
+          font-size: 15px; }
+        .fighters-detail-box .fighter-detail ul li .fa {
+          font-size: 50px;
+          color: #1a1b41; }
+
+@media (max-width: 1074px) {
+  .fighters-detail-box {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+    .fighters-detail-box .fighter-detail {
+      margin-top: 10px;
+      width: 100%;
+      margin-bottom: 10px; }
+      .fighters-detail-box .fighter-detail img {
+        width: 70px; }
+      .fighters-detail-box .fighter-detail h1 {
+        font-size: 22px; }
+      .fighters-detail-box .fighter-detail ul li {
+        width: 20%; }
+        .fighters-detail-box .fighter-detail ul li p {
+          text-align: center; }
+          .fighters-detail-box .fighter-detail ul li p span {
+            display: none; }
+        .fighters-detail-box .fighter-detail ul li .fa {
+          font-size: 25px; } }
+@media (max-width: 420px) {
+  .fighters-detail-box .fighter-detail {
+    box-shadow: none;
+    border-radius: 0px;
+    padding: 0;
+    margin: 0; } }
+.fighters-pick-box {
+  background-color: #CCCCCC; }
+  .fighters-pick-box .fight-info {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    min-height: 40vh; }
+    .fighters-pick-box .fight-info h2 {
+      text-transform: uppercase;
+      letter-spacing: 3.5px;
+      font-family: "Black Ops One", cursive;
+      text-align: center;
+      font-size: 34px;
+      color: #1a1b41; }
+    .fighters-pick-box .fight-info p {
+      width: 600px;
+      text-align: justify;
+      font-size: 20px;
+      color: #1a1b41; }
+  .fighters-pick-box .fight-choose {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    min-height: 40vh; }
+    .fighters-pick-box .fight-choose .fighter-select {
+      font-family: "Black Ops One", cursive;
+      font-size: 20px;
+      color: #1a1b41;
+      text-align: center;
+      border: 4px solid #1a1b41;
+      width: 400px;
+      padding: 7px;
+      line-height: 55px;
+      margin-right: 25px;
+      margin-left: 25px; }
+    .fighters-pick-box .fight-choose .vs {
+      border: 4px solid #1a1b41;
+      border-radius: 50%;
+      color: #1a1b41;
+      padding: 25px;
+      font-size: 65px;
+      font-family: "Black Ops One", cursive; }
+  .fighters-pick-box .error {
+    opacity: 0;
+    -webkit-transition: all 0.3s;
+            transition: all 0.3s;
+    letter-spacing: 2px;
+    font-size: 20px;
+    font-family: "Black Ops One", cursive;
+    color: #ff0000;
+    text-align: center;
+    width: 100%; }
+    .fighters-pick-box .error.show {
+      opacity: 1; }
+  .fighters-pick-box .button-position {
+    position: relative;
+    min-height: 20vh;
+    margin-right: auto;
+    margin-left: auto;
+    width: 999px; }
+
+@media (max-width: 1055px) {
+  .fighters-pick-box .fight-choose {
+    -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap; }
+  .fighters-pick-box .button-position {
+    width: 90%; } }
+@media (max-width: 771px) {
+  .fighters-pick-box .fight-choose .fighter-select {
+    font-size: 15px;
+    width: 300px; }
+  .fighters-pick-box .button-position {
+    width: 90%; } }
+@media (max-width: 650px) {
+  .fighters-pick-box .fight-info p {
+    width: 300px; }
+  .fighters-pick-box .fight-choose {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+    .fighters-pick-box .fight-choose .fighter-select {
+      font-size: 20px;
+      width: 450px; } }
+.header-box {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative; }
+  .header-box .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(26, 27, 65, 0.7); }
+  .header-box .header-info {
+    box-sizing: border-box;
+    z-index: 1000;
+    box-shadow: 5px -5px 5px 0px rgba(0, 0, 0, 0.75);
+    width: 800px;
+    background-color: #b3b3b3;
+    padding: 25px;
+    border-radius: 25px;
+    border: 2px #1a1b41 solid;
+    position: relative; }
+    .header-box .header-info h1 {
+      text-transform: uppercase;
+      letter-spacing: 3.5px;
+      font-family: "Black Ops One", cursive;
+      text-align: center;
+      font-size: 55px;
+      color: #1a1b41; }
+    .header-box .header-info p {
+      text-align: justify;
+      font-size: 20px;
+      color: #1a1b41; }
+    .header-box .header-info blockquote {
+      border-left: 4px solid #1a1b41;
+      font-style: italic;
+      margin: 0;
+      padding: 0;
+      position: relative; }
+      .header-box .header-info blockquote .fa-question {
+        opacity: 0;
+        font-size: 35px; }
+      .header-box .header-info blockquote p {
+        font-weight: 700;
+        letter-spacing: 2.5px;
+        font-size: 29px;
+        width: 30em;
+        overflow: hidden;
+        white-space: nowrap; }
+        .header-box .header-info blockquote p:before {
+          font-weight: 300;
+          color: #1a1b41;
+          content: "“";
+          font-size: 50px;
+          line-height: 0.1em;
+          margin-right: 0.2em;
+          vertical-align: -0.4em; }
+        .header-box .header-info blockquote p:after {
+          font-weight: 300;
+          color: #1a1b41;
+          content: "”";
+          font-size: 50px;
+          line-height: 0.1em;
+          vertical-align: -0.45em; }
+      .header-box .header-info blockquote:first-child {
+        display: inline; }
+      .header-box .header-info blockquote footer {
+        font-weight: 300;
+        font-size: 20px;
+        color: #1a1b41; }
+
+@media (max-width: 870px) {
+  .header-box .header-info {
+    width: 550px; }
+    .header-box .header-info h1 {
+      font-size: 40px; }
+    .header-box .header-info p {
+      font-size: 15px; }
+    .header-box .header-info blockquote p {
+      font-size: 15px; }
+    .header-box .header-info blockquote footer {
+      font-size: 15px; } }
+@media (max-width: 595px) {
+  .header-box .header-info {
+    box-shadow: none;
+    width: 290px; }
+    .header-box .header-info h1 {
+      font-size: 30px; }
+    .header-box .header-info blockquote p {
+      font-size: 12px;
+      letter-spacing: 1px; } }
+.winner-box {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .winner-box .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(26, 27, 65, 0.5); }
+  .winner-box .winner-info {
+    box-sizing: border-box;
+    z-index: 1000;
+    box-shadow: 5px -5px 5px 0px rgba(0, 0, 0, 0.75);
+    width: 600px;
+    background-color: #b3b3b3;
+    padding: 25px;
+    border-radius: 25px;
+    border: 2px #1a1b41 solid; }
+    .winner-box .winner-info h3 {
+      font-size: 25px;
+      color: #1a1b41; }
+    .winner-box .winner-info h2 {
+      text-transform: uppercase;
+      letter-spacing: 3.5px;
+      font-family: "Black Ops One", cursive;
+      text-align: center;
+      font-size: 45px;
+      color: #1a1b41; }
+    .winner-box .winner-info #winner-img img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 150px; }
+
+@media (max-width: 660px) {
+  .winner-box .winner-info {
+    width: 300px; }
+    .winner-box .winner-info h3 {
+      font-size: 20px; }
+    .winner-box .winner-info h2 {
+      font-size: 25px; }
+    .winner-box .winner-info #winner-img img {
+      width: 100px; } }
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Raleway", sans-serif; }
+
+.button {
+  background-color: transparent;
+  text-transform: uppercase;
+  border-radius: 4px;
+  line-height: 50px;
+  padding: 0 26px;
+  font-size: 29px;
+  outline: 0;
+  letter-spacing: 3.5px;
+  text-align: center;
+  -webkit-transition: 0.5s all ease-in-out;
+          transition: 0.5s all ease-in-out;
+  font-family: "Black Ops One", cursive;
+  font-weight: 700; }
+  .button.sec-button {
+    border: 4px solid #1a1b41;
+    color: #1a1b41; }
+    .button.sec-button:hover {
+      cursor: pointer;
+      background-color: #1a1b41;
+      border: 4px solid #1a1b41;
+      color: #CCCCCC; }
+  .button.float-right {
+    float: right; }
+
+@media (max-width: 595px) {
+  .button {
+    margin-top: 20px;
+    font-size: 20px;
+    padding: 0 18px;
+    line-height: 40px; } }
+.fight-button {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  border: 4px solid #CCCCCC;
+  background-color: transparent;
+  text-transform: uppercase;
+  color: #CCCCCC;
+  border-radius: 25px;
+  line-height: 50px;
+  padding: 15px;
+  font-size: 25px;
+  outline: 0;
+  letter-spacing: 3.5px;
+  text-align: center;
+  -webkit-transition: 0.5s all ease-in-out;
+          transition: 0.5s all ease-in-out;
+  font-family: "Black Ops One", cursive;
+  font-weight: 700; }
+  .fight-button:hover {
+    cursor: pointer;
+    background-color: #CCCCCC;
+    border: 4px solid #CCCCCC;
+    color: #1a1b41; }
+
+@media (max-width: 420px) {
+  .fight-button {
+    padding: 6px;
+    font-size: 20px; } }
+.header-image {
+  background-image: url("../img/military1.jpg");
+  background-size: cover;
+  background-position: center; }
+
+.winner-image {
+  background-size: cover;
+  background-position: center; }
+
+.dirty-img1 {
+  background-repeat: no-repeat;
+  overflow: hidden;
+  background-image: url("../img/dirty01.png");
+  background-size: 120% 120%;
+  background-position: center; }
+
+.dirty-img2 {
+  background-repeat: no-repeat;
+  overflow: hidden;
+  background-image: url("../img/dust.png");
+  background-position: center;
+  background-size: 120% 120%; }
+
+.animated {
+  -webkit-animation-duration: 0.4s;
+  animation-duration: 0.4s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both; }
+
+@-webkit-keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3); }
+  80% {
+    opacity: 1; } }
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3); }
+  80% {
+    opacity: 1; } }
+.zoomIn {
+  -webkit-animation-name: zoomIn;
+  animation-name: zoomIn; }
+
+@-webkit-keyframes type {
+  from {
+    width: 0; } }
+
+@keyframes type {
+  from {
+    width: 0; } }
+.type {
+  -webkit-animation: type 4s steps(60, end);
+          animation: type 4s steps(60, end); }
+
+@-webkit-keyframes zoomOut {
+  from {
+    opacity: 1; }
+  80% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3); }
+  to {
+    opacity: 0; } }
+
+@keyframes zoomOut {
+  from {
+    opacity: 1; }
+  80% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3); }
+  to {
+    opacity: 0; } }
+.zoomOut {
+  -webkit-animation-name: zoomOut;
+  animation-name: zoomOut; }
+
+@-webkit-keyframes appear {
+  0% {
+    opacity: 0; }
+  35% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes appear {
+  0% {
+    opacity: 0; }
+  35% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+.appear {
+  -webkit-animation-name: appear;
+          animation-name: appear;
+  -webkit-animation-duration: 6s;
+          animation-duration: 6s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both; }
+
+/*# sourceMappingURL=style.css.map */

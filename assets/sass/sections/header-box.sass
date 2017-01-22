@@ -1,0 +1,120 @@
+.header-box
+  min-height: 100vh
+  display: flex
+  justify-content: center
+  align-items: center
+  position: relative
+  
+  .overlay
+    position: absolute
+    top: 0
+    bottom: 0
+    right: 0
+    left: 0
+    background: rgba($sec-color, 0.7)
+
+  .header-info
+    box-sizing: border-box
+    z-index: 1000
+    box-shadow: 5px -5px 5px 0px rgba(0,0,0,0.75)
+    width: 800px
+    background-color: darken($white-color, 10%)
+    padding: 25px
+    border-radius: 25px
+    border: 2px $sec-color solid
+    position: relative
+
+    h1
+      text-transform: uppercase
+      letter-spacing: 3.5px
+      font-family: 'Black Ops One', cursive
+      text-align: center
+      font-size: 55px
+      color: $sec-color
+
+    p
+      text-align: justify
+      font-size: $p-big
+      color: $sec-color
+    
+
+    blockquote
+      border-left: 4px solid $sec-color
+      font-style: italic
+      margin: 0
+      padding: 0
+      position: relative
+      
+      .fa-question
+        opacity: 0
+        font-size: 35px
+
+
+
+      p
+        font-weight: 700
+        letter-spacing: 2.5px
+        font-size: 29px
+        width: 30em
+        overflow: hidden
+        white-space: nowrap
+
+        &:before
+          font-weight: 300
+          color: $sec-color
+          content: "\201C"
+          font-size: 50px
+          line-height: 0.1em
+          margin-right: 0.2em
+          vertical-align: -.4em
+       
+        &:after
+          font-weight: 300
+          color: $sec-color
+          content: "\201D"
+          font-size: 50px
+          line-height: 0.1em
+          vertical-align: -.45em
+     
+      &:first-child
+        display: inline
+
+      footer
+        font-weight: 300
+        font-size: $p-big
+        color: $sec-color
+
+@media (max-width: 870px)
+  .header-box
+    .header-info
+      width: 550px
+
+      h1
+        font-size: 40px
+
+      p
+        font-size: $p-med
+
+      blockquote
+
+        p
+          font-size: $p-med
+
+        footer
+          font-size: $p-med
+
+
+@media (max-width: 595px)
+  .header-box
+    .header-info
+      box-shadow: none
+      width: 290px
+      h1
+        font-size: 30px
+
+      blockquote
+
+        p
+          font-size: 12px
+          letter-spacing: 1px
+

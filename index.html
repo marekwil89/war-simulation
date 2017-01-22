@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Type" content="text/html, charset=utf-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>War Simulation</title>
+
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="bower_components/components-font-awesome/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Black+Ops+One" rel="stylesheet"> 
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,700,300&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+
+	<header class="header-box header-image">
+		<span class="overlay"></span>
+		<div class="header-info">
+			<h1>Symulator wojny</h1>
+			<p>Witam Was, ta aplikacja odmieni sposób prowadzenia wojen, od dzisiaj Państwa świata mogą rozwiązywać konflikty tą aplikacją. Za pomocą kilku przycisków jesteśmy w stanie przewidzieć która ze stron konfliktu zwycięży !. Państwo biorąc udział w wojnie nie pośle na śmierć ani jednego żołnierza !. Spróbuj sam i przekonaj się jakie to proste.</p>
+
+			<blockquote>
+				<p class="type">War, war never changes <i class="fa fa-question appear" aria-hidden="true"></i>.</p>
+				<footer>- Ron Perlman</footer>
+				
+			</blockquote>
+			<button class="button sec-button float-right" onclick="moveToSecond()">dalej</button>
+		</div>
+
+	</header>
+
+	<section class="fighters-pick-box dirty-img1">
+
+		<div class="fight-info">
+			<h2>Wybierz Państwa</h2>
+			<p>Za pomocą poniższych forlumalrzy wybierz Państwa które mają ze sobą stoczyć bitwę i kliknij przycisk "DALEJ"</p>
+		</div>
+
+		<div class="fight-choose">
+			<select class="fighter-select" id="fighter1"></select>
+
+			<div class="vs">VS</div>
+
+			<select class="fighter-select" id="fighter2"></select>
+		</div>
+		<div class="error">Wybierz inne Państwa</div>
+		<div class="button-position">
+
+			<button class="button sec-button float-right" onclick="moveTothird()">dalej</button>
+		</div>				
+
+		
+	</section>
+
+	<section class="fighters-detail-box dirty-img2">
+	
+		<div class="fighter-detail">
+			<article id="details1"></article>
+		</div>
+
+		<button class="fight-button" onclick="moveToFourth()">Symuluj konflikt</button>
+		
+		<div class="fighter-detail">
+			<article id="details2"></article> 
+		</div>
+
+	</section>
+	  
+	<section class="winner-box winner-image">
+	<span class="overlay"></span>
+	<div class="winner-info">
+			<h3 id="winnerWord"></h3>
+			<div id="winner-img"></div>
+			<h2 id="winner"></h2>
+			<button class="button sec-button float-right" onclick="moveToFirst()">powrót</button>
+		</div>
+	</section>
+
+	
+	 <script src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="assets/js/custom.js"></script>
+	<script src="assets/js/countries.js"></script>
+</body>
+</html>

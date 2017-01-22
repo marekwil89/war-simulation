@@ -1,0 +1,94 @@
+.fighters-detail-box
+  background-color: darken($light-gray, 25%)
+  display: flex
+  flex-wrap: nowrap
+  align-items: center
+  justify-content: center
+  min-height: 100vh
+  box-sizing: border-box
+
+  .fighter-detail
+    margin: 0 25px
+    box-shadow: 5px -5px 5px 0px rgba(0,0,0,0.75)
+    border-radius: 25px
+    background-color: $white-color
+    color: $sec-color
+    text-align: center
+    width: 400px
+    box-sizing: border-box
+
+
+    img
+      display: block
+      margin-left: auto
+      margin-right: auto
+      width: 130px
+
+    h1
+      font-family: 'Black Ops One', cursive
+      text-transform: uppercase
+      letter-spacing: 3.5px
+      font-size: 34px
+      color: $sec-color
+
+    ul
+      list-style: none
+      padding: 0
+      margin: 0
+
+      li
+        padding: 30px 0
+        box-sizing: border-box
+        display: inline-block
+        width: 50%
+
+        p
+          color: $sec-color
+          font-weight: 700
+          font-size: $p-med
+
+        .fa
+          font-size: 50px
+          color: $sec-color
+
+@media (max-width: 1074px)
+  .fighters-detail-box
+    flex-wrap: wrap
+    .fighter-detail
+      margin-top: 10px
+      width: 100%
+      margin-bottom: 10px
+
+      img
+        width: 70px
+
+      h1
+        font-size: 22px
+
+      ul
+        li
+          width: 20%
+
+          p
+            text-align: center
+
+            span
+              display: none
+
+          .fa
+            font-size: 25px
+
+
+@media (max-width: 420px)
+  .fighters-detail-box
+
+    .fighter-detail
+      box-shadow: none
+      border-radius: 0px
+      padding: 0
+      margin: 0
+
+
+
+
+

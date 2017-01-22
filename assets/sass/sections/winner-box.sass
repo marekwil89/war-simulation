@@ -1,0 +1,58 @@
+.winner-box
+  min-height: 100vh
+  display: flex
+  justify-content: center
+  align-items: center
+
+  .overlay
+    position: absolute
+    top: 0
+    bottom: 0
+    right: 0
+    left: 0
+    background: rgba($sec-color, 0.5)
+
+  .winner-info
+    box-sizing: border-box
+    z-index: 1000
+    box-shadow: 5px -5px 5px 0px rgba(0,0,0,0.75)
+    width: 600px
+    background-color: darken($white-color, 10%)
+    padding: 25px
+    border-radius: 25px
+    border: 2px $sec-color solid
+
+    h3
+      font-size: 25px
+      color: $sec-color      
+
+    h2
+      text-transform: uppercase
+      letter-spacing: 3.5px
+      font-family: 'Black Ops One', cursive
+      text-align: center
+      font-size: 45px
+      color: $sec-color
+
+    #winner-img
+      img
+        display: block
+        margin-left: auto
+        margin-right: auto
+        width: 150px
+
+@media (max-width: 660px)
+  .winner-box
+    .winner-info
+      width: 300px
+
+      h3
+        font-size: 20px
+      h2
+        font-size: 25px
+
+      #winner-img
+        img
+          width: 100px
+
+

@@ -1,0 +1,111 @@
+.fighters-pick-box
+  background-color: $white-color
+  
+
+
+  .fight-info
+    display: flex
+    align-items: center
+    justify-content: flex-end
+    flex-direction: column
+    min-height: 40vh
+    
+    h2
+      text-transform: uppercase
+      letter-spacing: 3.5px
+      font-family: 'Black Ops One', cursive
+      text-align: center
+      font-size: 34px
+      color: $sec-color
+
+    p
+      width: 600px
+      text-align: justify
+      font-size: $p-big
+      color: $sec-color
+
+
+  .fight-choose
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    justify-content: center
+    min-height: 40vh
+
+    .fighter-select
+      font-family: 'Black Ops One', cursive
+      font-size: $p-big
+      color: $sec-color
+      text-align: center
+      border: 4px solid $sec-color
+      width: 400px
+      padding: 7px
+      line-height: 55px
+      margin-right: 25px
+      margin-left: 25px
+
+    .vs
+      border: 4px solid $sec-color
+      border-radius: 50%
+      color: $sec-color
+      padding: 25px
+      font-size: 65px
+      font-family: 'Black Ops One', cursive
+
+  .error
+    opacity: 0
+    transition: all 0.3s
+    letter-spacing: 2px
+    font-size: 20px
+    font-family: 'Black Ops One', cursive
+    color: $main-color
+    text-align: center
+    width: 100%
+
+    &.show
+      opacity: 1
+
+
+  .button-position
+    position: relative
+    min-height: 20vh
+    margin-right: auto
+    margin-left: auto
+    width: 999px
+
+
+
+
+
+@media (max-width: 1055px)
+  .fighters-pick-box
+    .fight-choose
+      flex-wrap: nowrap
+
+    .button-position
+      width: 90%
+
+@media (max-width: 771px)
+  .fighters-pick-box
+    .fight-choose
+      .fighter-select
+        font-size: $p-med
+        width: 300px
+
+    .button-position
+      width: 90%
+
+
+@media (max-width: 650px)
+  .fighters-pick-box
+    .fight-info
+      
+      p
+        width: 300px
+
+    .fight-choose
+      flex-wrap: wrap
+      .fighter-select
+        font-size: $p-big
+        width: 450px
+
